@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	  <UserSecretsId>1bd5bc64-9e32-471d-837f-40c91f1640cd</UserSecretsId>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<!-- Pacotes do Entity Framework Core compatíveis com o .NET 8 -->
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.1" />
+
+		<!-- Outros pacotes compatíveis -->
+		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.3.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+		<!-- Versão mais recente compatível com o .NET 8 -->
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.3.0" />
+		<!-- Pomelo para MySQL compatível com o .NET 8 -->
+		<PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.1" />
+	</ItemGroup>
+
+</Project>
